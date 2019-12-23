@@ -1,36 +1,26 @@
 import React from 'react';
-import './App.css';
-import Home from './Container/home/home';
-import About from './Container/profile/profile';
-import Contact from './Container/kampanye/kampanye'; 
-// import Apps from './Component/app';
-// import Cards from './Component/card';
-// import Navigation from './Component/navigation';
-// import Cardd from './Component/card2';
-// import Papere from './Component/paper';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import Counter from './component/counter';
+import About from './page/about';
+import Home from './page/home';
+import Counterd from './component/counter-class';
+import Menu from './component/menu';
+import Data from './component/data-diri';
+import Makanan from './page/list-makanan';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-
- <Router>
-  <Switch>
-    <Route path="/"exact>
-         <Home />
-    </Route>
-    <Route path="/profile">
-         <About />
-    </Route>
-    <Route path="/kampanye">
-         <Contact />
-    </Route>
-  </Switch>
-  </Router>
-  
+    <div>
+      <Switch>
+        <Route path="/" exact component ={Home} />
+        <Route path="/Counter" exact component ={Counter} />
+        <Route path="/about"exact component ={About} />
+        <Route path="/counterd"exact component ={Counterd} />
+        <Route path="/menu"exact component ={Menu} />
+        <Route path="/data"exact component ={Data} />
+        <Route path="/makanan"exact component ={Makanan} />
+      </Switch>
+    </div>
   );
 }
 
