@@ -5,7 +5,9 @@ function Counter(props) {
   // const  {classes } = props
   return (
     <React.Fragment>
-      <h1>belajar</h1>
+      <h1>belajar sudo yarn create react-app belajar62
+
+</h1>
       <div>
         <h1>{angka}</h1>
         <div>
